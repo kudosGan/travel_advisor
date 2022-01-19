@@ -14,19 +14,19 @@ const List =() =>{
             <Typography variant="h4">Restaurant, Hotels & Attractions around you</Typography>
             <FormControl className={classes.formControl}> 
                 <InputLabel>  Type </InputLabel>
-                <Select Value={type} onChange={(e) => setType(e.target.value)}>
-                    <MenuItem Value="restaurants">Restaurants</MenuItem>
-                    <MenuItem Value="hotels">Hotels</MenuItem>
-                    <MenuItem Value="attractions">Attractions</MenuItem>
+                <Select value={type} onChange={(e) => setType(e.target.value)}>
+                    <MenuItem value="restaurants">Restaurants</MenuItem>
+                    <MenuItem value="hotels">Hotels</MenuItem>
+                    <MenuItem value="attractions">Attractions</MenuItem>
                 </Select>
             </FormControl>
             <FormControl className={classes.formControl}> 
                 <InputLabel> Rating </InputLabel>
-                <Select Value={rating} onChange={(e) => setRating(e.target.value)}>
-                    <MenuItem Value={0}>All</MenuItem>
-                    <MenuItem Value={3}>Above 3.0</MenuItem>
-                    <MenuItem Value={4}>Above 4.0</MenuItem>
-                    <MenuItem Value={4.5}>Above 4.5</MenuItem>
+                <Select value={rating} onChange={(e) => setRating(e.target.value)}>
+                    <MenuItem value={0}>All</MenuItem>
+                    <MenuItem value={3}>Above 3.0</MenuItem>
+                    <MenuItem value={4}>Above 4.0</MenuItem>
+                    <MenuItem value={4.5}>Above 4.5</MenuItem>
                 </Select>
             </FormControl>
         </div>
